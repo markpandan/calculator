@@ -1,3 +1,5 @@
+export const OPERATORS = "/*-+%";
+
 export const BUTTON_ACTIONS = {
   "number-0": 0,
   "number-1": 1,
