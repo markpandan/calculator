@@ -31,6 +31,10 @@ calculator_buttons.addEventListener("click", (e) => {
       if (text.includes("-")) text = text.slice(1);
       else text = "-" + text;
       break;
+    case "decimal":
+      if (!text.includes(BUTTON_ACTIONS[buttonPress]))
+        text += BUTTON_ACTIONS[buttonPress] ?? "";
+      break;
     default:
       if (OPERATORS.includes(BUTTON_ACTIONS[buttonPress])) {
         operator = BUTTON_ACTIONS[buttonPress];
