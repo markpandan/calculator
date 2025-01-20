@@ -3,11 +3,16 @@
 }
 
 .container {
+  width: 350px;
+  height: 350px;
 }
 
 .display {
   height: 200px;
   background-color: gray;
+  border-radius: 12px;
+  color: white;
+  font-size: xx-large;
 }
 
 .row {
