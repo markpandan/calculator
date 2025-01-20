@@ -2,26 +2,47 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .container {
   width: 350px;
-  height: 350px;
 }
 
 .display {
+  display: flex;
+  align-items: end;
+  justify-content: end;
   height: 200px;
   background-color: gray;
   border-radius: 12px;
   color: white;
   font-size: xx-large;
+  padding: 16px;
 }
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 5px 0px;
 }
 
 button {
   width: 75px;
   height: 75px;
   font-size: x-large;
+}
+
+.row > * {
+  flex: 1 0 auto;
+  border-radius: 12px;
+}
+
+#number-0 {
+  flex: 2 0 155px;
 }
